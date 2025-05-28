@@ -14,35 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
   templateUrl: './section-alliance.component.html',
   styleUrl: './section-alliance.component.scss'
 })
-export class SectionAllianceComponent implements OnInit {
+export class SectionAllianceComponent {
   
-  findAlliances = new FindManyAlliance()
-  
-  ngOnInit(): void {
-    this.findAlliances.execute({ page: 0, perPage: 20 }).subscribe({
-      next: (e: Result<Alliance[]>) => {
-          if ( !e.IsError() ) {
-            this.alliances = e.getValue()
-          }
-      }
-    })
-
-    setInterval( () => {
-      this.nextSlide()
-    } , 6000)
-  }
-
-  alliances: Alliance[] = []
-  currentIndex = 1
-
-  nextSlide() {
-    if (this.currentIndex + 4 <= this.alliances.length) 
-      this.currentIndex = (this.currentIndex + 1)
-    else this.currentIndex = 1
-  }
-
-  prevSlide() {
-    if (this.currentIndex - 1 > 0 )
-      this.currentIndex = (this.currentIndex - 1)
-  }
+  missionText = `Se basa en producir impactos positivos en la sociedad mediante acciones que afecten directamente en el bienestar y en el desarrollo de comunidades vulnerables. `
 }

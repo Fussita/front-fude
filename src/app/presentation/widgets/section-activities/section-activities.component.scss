@@ -9,12 +9,12 @@
 .act-cont {
     padding: 6px;
     justify-content: center;
+    box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.61);
     transition: 0.4s scale;
 }
 
 .act-cont:hover {
     scale: 1.03;
-    box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.61);
 }
 
 .activities-main-phone {
@@ -24,20 +24,20 @@
 .act-phone {
     transition: 0.4s scale, 0.4s box-shadow;
     padding: 12px;
+    box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.61);
 }
 
 .act-phone:hover {
     scale: 1.02;
-    box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.61);
 }
 
 .act-cont {
     padding: 24px 0px;
-    border-radius: 6px;
+    border-radius: 3px;
 }
 
 .img-act {
-    border-radius: 6px;
+    border-radius: 3px;
 }
 
 @media only screen and (max-width: 768px) {
