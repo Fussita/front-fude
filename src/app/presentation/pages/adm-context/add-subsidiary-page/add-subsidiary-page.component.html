@@ -1,0 +1,115 @@
+<div flex-col style="height: 100%;">
+  <header-simple></header-simple>
+
+  <div flex-col class="cont-intro bg-blue-100" style="width: 100%; padding: 24px 12%;">
+    <p class="font-20-800" style="color: white;">AÑADIR SUCURSAL</p>
+  </div>
+
+  <div flex-col style="height: 100%; padding: 4% 18%; gap: 8px;">
+    <form flex-col style="gap: 24px;" [formGroup]="xform" (ngSubmit)="onSubmit()">
+
+      <div flex-col style="gap: 8px;">
+        <app-map
+                [locations]="[]"
+                [enableClickEvent]="true"
+                (locationSelected)="onLocationSelected($event)"
+                [dragging]="true"
+                [scrollWheelZoom]="true"
+                [doubleClickZoom]="true"
+                [touchZoom]="true"
+                [zoom]="6"
+                style="display: flex; flex-direction: column; width: 100%; height: 600px; position: relative;"></app-map>
+      </div>
+
+      <div flex-col style="gap: 8px;">
+        <label for="cityName" style="color: white; font-size: 16px;">Nombre de la Ciudad</label>
+        <input id="cityName" class="inp-base" type="text" formControlName="cityName" name="cityName" placeholder="NOMBRE DE LA CIUDAD" style="width: 100%; height: 48px;" />
+
+        @if (isVal('cityName') && gErr('cityName').hasValue() ) {
+          <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{gErr('cityName').getValue()}}</p></div>
+        }
+      </div>
+
+      <div flex-col style="gap: 8px;">
+        <label for="stateName" style="color: white; font-size: 16px;">Nombre del Estado</label>
+        <input id="stateName" class="inp-base" type="text" formControlName="stateName" name="stateName" placeholder="NOMBRE DEL ESTADO" style="width: 100%; height: 48px;" />
+
+        @if (isVal('stateName') && gErr('stateName').hasValue() ) {
+          <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{gErr('stateName').getValue()}}</p></div>
+        }
+      </div>
+
+      <div flex-col style="gap: 8px;">
+        <label for="name" style="color: white; font-size: 16px;">Nombre de la Sucursal:</label>
+        <input id="name" class="inp-base" type="text" formControlName="name" name="nombre" placeholder="NOMBRE DE LA SUCURSAL" style="width: 100%; height: 48px;" />
+
+        @if (isVal('name') && gErr('name').hasValue() ) {
+          <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{gErr('name').getValue()}}</p></div>
+        }
+      </div>
+
+      <div flex-col style="gap: 8px;">
+        <label style="color: white;">Teléfonos:</label>
+        <div *ngFor="let phone of phones; index as i; trackBy: trackByIndex" flex>
+          <input class="inp-base" style="flex: 1; height: 48px;" [(ngModel)]="phones[i].value" [ngModelOptions]="{standalone:true}" (ngModelChange)="onPhoneChange($event, i)" [name]="'phone-' + i" placeholder="TELÉFONO">
+
+          @if (phone.error) {
+            <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{phone.error}}</p></div>
+          }
+
+          <button type="button" class="btt-remove" style="margin-left: 8px;" (click)="removePhone(i)">Eliminar</button>
+        </div>
+        <button type="button" class="btt-add" (click)="addPhone()">Agregar Teléfono</button>
+      </div>
+
+      <div flex-col style="gap: 8px;">
+        <label style="color: white;">Correos:</label>
+        <div *ngFor="let email of emails; index as i; trackBy: trackByIndex" flex>
+          <input class="inp-base" style="flex: 1; height: 48px;" [(ngModel)]="emails[i].value" [ngModelOptions]="{standalone:true}" (ngModelChange)="onEmailChange($event, i)" [name]="'email- ' + i" placeholder="CORREO">
+
+          @if (email.error) {
+            <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{email.error}}</p></div>
+          }
+
+          <button type="button" class="btt-remove" style="margin-left: 8px;" (click)="removeEmail(i)">Eliminar</button>
+        </div>
+        <button type="button" class="btt-add" (click)="addEmail()">Agregar Correo</button>
+      </div>
+
+      <div flex-col style="gap: 8px;">
+        <label for="status" style="color: white; font-size: 16px;">Estado:</label>
+        <select
+        id="status"
+        class="inp-base"
+        formControlName="status"
+        style="width: 100%; height: 48px; padding: 8px; font-size: 16px;">
+        <option value="ACTIVO">ACTIVO</option>
+        <option value="INACTIVO">INACTIVO</option>
+        </select>
+
+        @if (isVal('status') && gErr('status').hasValue() ) {
+          <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{gErr('status').getValue()}}</p></div>
+        }
+      </div>
+
+      <div flex-col style="gap: 8px;">
+        <label for="creationDate" style="color: white; font-size: 16px;">Fecha de Creación:</label>
+        <input
+          id="creationDate"
+          formControlName="creationDate"
+          class="inp-base"
+          type="date"
+          style="width: 100%; height: 48px; padding: 8px; font-size: 16px;"
+          name="fecha"
+          placeholder="FECHA DE CREACIÓN"/>
+      </div>
+
+      @if (isVal('creationDate') && gErr('creationDate').hasValue() ) {
+        <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{gErr('creationDate').getValue()}}</p></div>
+      }
+
+      <button class="btt-prim" style="width: auto; height: auto; align-self: end; margin-top: 20px;" type="submit">CONFIRMAR</button>
+    </form>
+  </div>
+
+</div>

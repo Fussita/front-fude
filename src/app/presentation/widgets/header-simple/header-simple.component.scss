@@ -1,0 +1,41 @@
+
+@import '../../../../styles.scss';
+
+.header {
+    width: 100%;
+    height: 120px;
+    padding: 24px 8%;
+    justify-content: space-between;
+    box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.61);
+
+}
+
+.nav-bar {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-title {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-subtitle {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-subtitle:hover {
+    color: rgb(255, 251, 0);
+}
+
+.nav-item {
+    gap: 24px;
+    padding: 0 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-item {
+        display: none;
+    }
+}

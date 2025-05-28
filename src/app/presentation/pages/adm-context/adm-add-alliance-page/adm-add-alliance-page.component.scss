@@ -1,0 +1,25 @@
+@import '../../../../../styles.scss';
+
+.insti-item {
+    cursor: pointer;
+    padding: 12px;
+
+    row-gap: 12px;
+    font-weight: 600;
+    text-align: center;
+    transition: box-shadow 0.4s;
+    align-items: center;
+
+    img {
+        border-radius: 6px;
+    }
+}
+
+.insti-item:hover {
+    box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.61);
+}
+
+.selected-item {
+    border: 1px solid rgb(76, 76, 76);    
+    scale: 1.04;
+}

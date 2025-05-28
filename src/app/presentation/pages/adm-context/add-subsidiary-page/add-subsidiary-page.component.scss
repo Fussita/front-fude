@@ -1,0 +1,43 @@
+@import '../../../../../styles.scss';
+
+.btt-add {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btt-add:hover {
+  background-color: #45A049;
+}
+
+.btt-remove {
+  background-color: #FF4D4D;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btt-remove:hover {
+  background-color: #D40000;
+}
+
+.inp-base {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.inp-base:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}

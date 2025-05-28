@@ -1,0 +1,45 @@
+
+.font-ff-1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+@mixin font-use($size, $height, $strong) {
+    font-size: $size;
+    font-weight: $strong;
+    line-height: $height;
+}
+
+$items: (
+    "font-16-200": (size: 16px, weight: 200, height: 24px),
+    "font-18-200": (size: 18px, weight: 200, height: 24px),
+    "font-20-200": (size: 20px, weight: 200, height: 24px),
+    "font-24-200": (size: 24px, weight: 200, height: 28px),
+    
+    "font-16-400": (size: 16px, weight: 400, height: 24px),
+    "font-18-400": (size: 18px, weight: 400, height: 24px),
+    "font-20-400": (size: 20px, weight: 400, height: 24px),
+    "font-24-400": (size: 24px, weight: 400, height: 28px),
+    
+    "font-16-600": (size: 16px, weight: 600, height: 24px),
+    "font-18-600": (size: 18px, weight: 600, height: 24px),
+    "font-20-600": (size: 20px, weight: 600, height: 24px),
+    "font-24-600": (size: 24px, weight: 600, height: 28px),
+    
+    "font-16-800": (size: 16px, weight: 800, height: 24px),
+    "font-18-800": (size: 18px, weight: 800, height: 24px),
+    "font-20-800": (size: 20px, weight: 800, height: 24px),
+    "font-24-800": (size: 24px, weight: 800, height: 28px),
+    "font-28-800": (size: 28px, weight: 800, height: 32px),
+    
+);
+
+@each $name, $props in $items {
+    .#{$name} {
+        @include font-use( map-get($props, size), map-get($props, height), map-get($props, weight) )
+    }
+}
+
+.jt-text {
+    word-wrap: break-word; 
+    text-align: justify;
+}

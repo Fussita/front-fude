@@ -1,0 +1,39 @@
+mat-dialog-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+mat-dialog-content {
+  font-size: 16px;
+  color: #333;
+}
+
+.custom-actions {
+  display: flex;
+  justify-content: center; /* Centra el botón horizontalmente */
+  padding: 16px; /* Espaciado alrededor */
+}
+
+.modern-button {
+  background-color: #2a6be6; /* Color de fondo moderno */
+  color: #ffffff; /* Color del texto */
+  border: none; /* Sin bordes */
+  outline: none;
+  padding: 8px 32px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Fuente en negrita */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+  cursor: pointer;
+}
+
+.modern-button:hover {
+  background-color: #1535e9; /* Color al pasar el cursor */
+  transform: scale(1.05); /* Efecto de ampliación */
+}
+
+.modern-button:active {
+  background-color: #0325e0; /* Color al hacer clic */
+  transform: scale(0.95); /* Efecto al presionar */
+}

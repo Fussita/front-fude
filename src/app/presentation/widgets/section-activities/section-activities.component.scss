@@ -1,0 +1,50 @@
+@import '../../../../styles.scss';
+
+.txt-limit {
+    width: 100%;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.act-cont {
+    padding: 6px;
+    justify-content: center;
+    transition: 0.4s scale;
+}
+
+.act-cont:hover {
+    scale: 1.03;
+    box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.61);
+}
+
+.activities-main-phone {
+    display: none;
+}
+
+.act-phone {
+    transition: 0.4s scale, 0.4s box-shadow;
+    padding: 12px;
+}
+
+.act-phone:hover {
+    scale: 1.02;
+    box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.61);
+}
+
+.act-cont {
+    padding: 24px 0px;
+    border-radius: 6px;
+}
+
+.img-act {
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+    .activities-main-phone {
+        display: flex;
+    }
+    .activities-main {
+        display: none;
+    }
+}

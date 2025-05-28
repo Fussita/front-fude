@@ -1,0 +1,35 @@
+<div flex-col style="width: 100%; height: 100%;">
+  <header-simple></header-simple>
+  <div style="padding: 20px; height: 100%;">
+    <app-map
+            [locations]="data"
+            [dragging]="true"
+            [scrollWheelZoom]="true"
+            [doubleClickZoom]="true"
+            [touchZoom]="true"
+            [zoom]="6"
+            style="display: flex; flex-direction: column; width: 100%; height: 100%; position: relative;"></app-map>
+  </div>
+
+  <!-- <div style="padding: 20px;">
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Ubicación</th>
+          <th>Teléfonos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of data; index as i" (click)="openPopup(i)" style="cursor: pointer;">
+          <td>{{ item.name }}</td>
+          <td>
+            {{ item.location.cityName + ", " + item.location.stateName }}
+            <fa-icon [icon]="locationIcon" style="color: black; font-size: 24px; cursor: pointer;" (click)="goLocation(item.location.latitude, item.location.longitude, $event)"></fa-icon>
+          </td>
+          <td>{{ item.telefonos.join(', ') }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+</div>

@@ -1,0 +1,38 @@
+
+.btt-tab {
+    cursor: pointer;
+    font-weight: 800;
+    border: 0px;
+    padding: 12px;
+    transition: background-color 0.4s, scale 0.4s;
+    border-radius: 6px;
+}
+
+.btt-tab:hover {
+    scale: 1.04;
+    background-color: #11207a;
+}
+
+.tab-buttons {
+    width: 20%;
+}
+
+.btt-tab {
+    width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .tab-face {
+        display: none;
+    }
+
+    .tab-buttons {
+        width: 100%;
+    }
+    
+    .btt-tab {
+        width: 100%;
+    }
+}
+

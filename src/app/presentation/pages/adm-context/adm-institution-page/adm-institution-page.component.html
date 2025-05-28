@@ -1,0 +1,42 @@
+
+<div flex-col style="height: 100%;">
+    
+    <div flex-col class="cont-intro bg-blue-100" style="width: 100%; padding: 24px 12%;">
+        <p class="font-20-800" style="color: white;">INSTITUCIONES ALIADAS</p>
+        <p class="font-16-200 jt-text" style="color: white;">{{textRandom}}</p>
+    </div>
+
+    <div flex-col class="main-cont" style="height: auto;">
+    
+        <div flex
+            (click)="goWhere('auth/tab/institution/add')"
+            class="add-button" style="justify-content: center; cursor: pointer; background-color: rgb(189, 189, 253);">
+            <p class="font-24-800 font-blue-100" style="font-size: 80px; line-height: 88px;">+</p>
+        </div>
+
+        @for ( i of insti; track $index; ) {
+        <div flex-col class="show-item bg-blue-100" style=" align-items: start; gap: 24px; padding: 4% 4%; height: auto; 
+            color: white; border: 1px solid white;
+        "> 
+            
+            <div flex style="height: auto; width: 100%; justify-content: center;">
+                <img style="height: 140px; width: auto;" src="{{i.image}}">
+            </div>
+
+            <div flex-col style="gap: 6px;">
+                <p class="font-20-800">{{i.name}}</p>
+                <p class="font-16-400">{{i.phone}} - {{i.email}}</p>
+                <p class="font-18-200 jt-text">{{i.description}}</p>
+                <div flex style="gap: 12px;">
+                    <button class="btt-prim" 
+                        (click)="goWhere('auth/tab/institution/mod/'+i.id)"
+                    >MODIFICAR</button>
+                    <button class="btt-prim-accent" (click)="openPopup(i.id)">ELIMINAR</button>
+                </div>
+            </div>
+        </div>
+    }
+
+    </div>
+
+</div>

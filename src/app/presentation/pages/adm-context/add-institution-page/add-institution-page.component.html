@@ -1,0 +1,52 @@
+
+<div flex-col style="height: 100%;">
+
+    <div flex-col class="cont-intro bg-blue-100" style="width: 100%; padding: 24px 12%;">
+        <p class="font-20-800" style="color: white;">AÑADIR INSTITUCION ALIADA</p>
+    </div>
+
+    <div flex-col style="height: 100%; padding: 4% 18%; gap: 12px;">
+        <form flex-col style="gap: 24px;" [formGroup]="xform" >
+
+            <input type="file" (change)="onFileChange($event)">
+
+            <input class="inp-base" formControlName="name" 
+                style="width: 100%; height: 48px;" placeholder="NOMBRE">
+
+            @if (isVal('name') && gErr('name').hasValue() ) {
+                <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{gErr('name').getValue()}}</p></div>                   
+            }      
+
+            <input class="inp-base" formControlName="description" 
+                style="width: 100%; height: 48px;" placeholder="DESCRIPCION">
+
+            @if (isVal('description') && gErr('description').hasValue() ) {
+                <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{gErr('description').getValue()}}</p></div>                   
+            }          
+
+            <input class="inp-base" formControlName="phone" 
+                style="width: 100%; height: 48px;" placeholder="TELEFONO">
+
+            @if (isVal('phone') && gErr('phone').hasValue() ) {
+                <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{gErr('phone').getValue()}}</p></div>                   
+            }          
+    
+            <input class="inp-base" formControlName="email" 
+                style="width: 100%; height: 48px;" placeholder="CORREO">
+        
+                @if (isVal('email') && gErr('email').hasValue() ) {
+                    <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{gErr('email').getValue()}}</p></div>                   
+                }          
+
+        </form>
+
+        <button 
+            class="btt-prim"
+            style="width: auto; height: auto; align-self: end;"
+            (click)="add()"
+        >CONFIRMAR</button>
+
+
+    </div>
+
+</div>

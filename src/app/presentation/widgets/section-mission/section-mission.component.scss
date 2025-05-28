@@ -1,0 +1,45 @@
+
+@import '../../../../styles.scss';
+
+.section-mission {
+    padding: 48px 8%;
+    gap: 3vw;
+    height: auto;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    position: relative;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .section-mission {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.imagen {
+    width: 100%; height: 100%; object-fit: cover; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(98, 98, 255, 0.8); 
+    pointer-events: none;
+}
+
+.wall {    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

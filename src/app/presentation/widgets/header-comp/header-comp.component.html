@@ -1,0 +1,64 @@
+<div flex-col class="header">
+    <div class="wall" >
+        <img class="imagen" src="../../../../assets/images/hand-wall.jpg">
+        <div class="overlay"></div>
+    </div>
+
+    <div flex-col style="gap: 24px; z-index: 50;">
+        <div flex style="padding: 0 24px; justify-content: end; gap: 16px;">
+            <img src="../../../../assets/images/ig.png"
+                style="width: 12px; height: 12px; cursor: pointer;"
+            >
+            <img src="../../../../assets/images/face.png"
+                style="width: 8px; height: 12px; cursor: pointer;"
+            >
+            <img src="../../../../assets/images/user.png"
+                (click)="goWhere('auth/login')"
+                style="width: 12px; height: 12px; cursor: pointer;"
+            > 
+        </div>
+  
+        <div flex class="nav-bar">
+            <p class="nav-title font-28-800"
+            (click)="goWhere('home')" >FUDEPRONA</p>
+            
+            <div flex  class="hidden-nav" style="
+                justify-content: end;">
+                <img (click)="showHiddenMenu()"
+                    src="../../../../assets/images/menu.png"
+                    style="margin-top: 6px; width: 20px; height: 20px; cursor: pointer;"
+                >
+            </div>
+
+            <div flex class="nav-item" style="align-items: center;">
+                <p class="nav-subtitle font-18-600" (click)="goWhere('home')" >NOSOTROS</p>
+                <p class="nav-subtitle font-18-600">ACTIVIDADES</p>
+                <p class="nav-subtitle font-18-600"
+                    (click)="goWhere('institution')"
+                >INSTITUCIONES</p>
+                <p class="nav-subtitle font-18-600"
+                    (click)="goWhere('subsidiary')"
+                >SUCURSALES</p>
+            </div>
+        </div>
+    </div>
+
+    <div flex-col id="menu-hidden" class="menu-hidden bg-blue-100" style="width: 100%; z-index: 100;">
+        <button class="font-20-800 bg-blue-100" style=" cursor: pointer; color: white; border: 0px; width: 100%; height: 40px;"
+            (click)="goWhere('home')"    
+        >NOSOTROS</button>
+        <button class="font-20-800 bg-blue-100" style=" cursor: pointer; color: white; border: 0px; width: 100%; height: 40px;"
+            (click)="goWhere('institution')"    
+        >INSTITUCIONES</button>
+        <button class="font-20-800 bg-blue-100" style=" cursor: pointer; color: white; border: 0px; width: 100%; height: 40px;"
+            (click)="goWhere('subsidiary')"    
+        >SUCURSALES</button>
+
+    </div>
+
+    <div flex-col class="header-footer" style="z-index: 100;">
+        <p class="hf-text font-28-800 jt-text"> La Fundacion para la Defensa de los Derechos y Proteccion del Niño, Niña y Adolescente </p>
+        <button class="btt-prim hf-btt ">CONOCER MAS</button>
+    </div>
+
+</div>

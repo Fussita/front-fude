@@ -1,0 +1,63 @@
+
+<div flex-col style="height: 100%;">
+  <header-simple></header-simple>
+
+  <div flex-col class="main-cont" style="height: 100%;">
+
+      <div flex
+          (click)="goWhere('auth/subsidiary/add')"
+          class="add-button" style="justify-content: center; cursor: pointer; background-color: rgb(189, 189, 253); margin-bottom: 20px; border-radius: 6px;">
+          <p class="font-24-800 font-blue-100" style="font-size: 80px; line-height: 88px;">+</p>
+      </div>
+
+
+      <div *ngFor="let i of data; index as ind" flex-col class="show-item bg-blue-100" style=" gap: 24px; padding: 4% 4%; height: auto;
+          color: white; border: 1px solid white; margin-bottom: 10px; border-radius: 6px;
+      ">
+
+        <div style="box-shadow: 4px 4px 8px rgba(63, 63, 63, 0.61);">
+          <app-map [locations]="[data[ind]]" [viewOnly]="true" style="display: flex; flex-direction: column; width: 100%; height: 300px; position: relative;"></app-map>
+        </div>
+
+        <div flex-col style="gap: 6px;">
+          <p><strong>Nombre:</strong> {{ i.name }}</p>
+
+          <div>
+            <p><strong>Emails:</strong></p>
+            <ul style="margin-left: 40px;">
+              <li *ngFor="let email of i.emails">{{ email }}</li>
+            </ul>
+          </div>
+
+          <div>
+            <p><strong>Teléfonos:</strong></p>
+            <ul style="margin-left: 40px;">
+              <li *ngFor="let telefono of i.telefonos">{{ telefono }}</li>
+            </ul>
+          </div>
+
+          <p><strong>Estado:</strong> {{ i.status }}</p>
+
+          <p><strong>Fecha de Creación:</strong> {{ i.creationDate.toISOString().split('T')[0] }}</p>
+
+          <div>
+            <p><strong>Ubicación:</strong></p>
+            <ul style="margin-left: 40px;">
+              <li><strong>Ciudad:</strong> {{ i.location.cityName }}</li>
+              <li><strong>Estado:</strong> {{ i.location.stateName }}</li>
+              <li><strong>Longitud:</strong> {{ i.location.longitude }}</li>
+              <li><strong>Latitud:</strong> {{ i.location.latitude }}</li>
+            </ul>
+          </div>
+
+          <div flex style="gap: 12px;">
+            <button class="btt-prim">MODIFICAR</button>
+            <button class="btt-prim-accent" (click)="openPopup()">ELIMINAR</button>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+
+</div>

@@ -1,0 +1,46 @@
+
+
+$shadow-little: 2px 2px 4px rgba(63, 63, 63, 0.61);
+
+.btt-prim, .btt-prim-accent {
+    border: 0;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 800;
+    box-shadow: $shadow-little;
+    cursor: pointer;
+    transition: 0.3s box-shadow, 0.4s background-color;
+}
+
+.btt-prim-accent {
+    background-color: yellow;
+    color: black;
+}
+
+.btt-prim-accent:hover {
+    background-color: rgb(214, 214, 9);
+}
+
+.btt-prim:hover {
+    box-shadow: 0px 0px 0px;
+    background-color: rgb(186, 186, 186);
+}
+
+.inp-base {
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    padding-left: 24px;
+    font-size: 14px;
+    font-weight: 800;
+    border: 1px solid rgb(152, 152, 152);
+    transition: 0.4s background-color;
+}
+
+.inp-base:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.inp-base:focus {
+    outline: none;
+}

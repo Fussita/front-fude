@@ -1,0 +1,16 @@
+
+$items: (
+    "blue-100": (color: #2E47D4),
+    "wh-100": (color: #ffffff),
+    "bl-100": (color: hsl(0, 0%, 0%)),
+    "gr-100": (color: #5a5a5a),
+);
+
+@each $name, $props in $items {
+    .font-#{$name} {
+        color: map-get($props, color);
+    }
+    .bg-#{$name} {
+        background-color: map-get($props, color);
+    }
+}

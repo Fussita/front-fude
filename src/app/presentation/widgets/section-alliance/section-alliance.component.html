@@ -1,0 +1,17 @@
+
+<div flex-col style="padding: 0px 8% 24px 8%; gap: 24px; ">
+    <p class="font-24-800">INSTITUCIONES ALIADAS</p>
+    
+    <div class="activities-main" flex style="justify-content: center; gap: 24px;">
+        
+        <div style="justify-content: center; display: flex; flex-wrap: wrap; gap: 10px; ">
+            @for (i of alliances; track $index) {
+                <div class="nt-cont" style="padding: 24px;">
+                    <img style="width: 180px; object-fit: cover;" src="{{i.institutionImage}}">
+                </div>
+            }
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,32 @@
+mat-dialog-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+mat-dialog-content p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 16px;
+}
+
+.modern-button {
+  border: none; /* Sin bordes */
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Fuente en negrita */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+  cursor: pointer;
+}
+
+.modern-button:hover {
+  background-color: #1535e9; /* Color al pasar el cursor */
+  transform: scale(1.05); /* Efecto de ampliación */
+}

@@ -1,0 +1,40 @@
+<h2 mat-dialog-title>Información de Subsidiario</h2>
+
+<mat-dialog-content>
+  <div style="display: flex; gap: 10px; flex-direction: column;">
+
+    <p><strong>Nombre:</strong> {{ data.name }}</p>
+
+    <div>
+      <p><strong>Emails:</strong></p>
+      <ul style="margin-left: 40px;">
+        <li *ngFor="let email of data.emails">{{ email }}</li>
+      </ul>
+    </div>
+
+    <div>
+      <p><strong>Teléfonos:</strong></p>
+      <ul style="margin-left: 40px;">
+        <li *ngFor="let telefono of data.telefonos">{{ telefono }}</li>
+      </ul>
+    </div>
+
+    <p><strong>Estado:</strong> {{ data.status }}</p>
+
+    <p><strong>Fecha de Creación:</strong> {{ data.creationDate.toISOString().split('T')[0] }}</p>
+
+    <div>
+      <p><strong>Ubicación:</strong></p>
+      <ul style="margin-left: 40px;">
+        <li><strong>Ciudad:</strong> {{ data.location.cityName }}</li>
+        <li><strong>Estado:</strong> {{ data.location.stateName }}</li>
+        <li><strong>Longitud:</strong> {{ data.location.longitude }}</li>
+        <li><strong>Latitud:</strong> {{ data.location.latitude }}</li>
+      </ul>
+    </div>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="custom-actions">
+  <button mat-button mat-dialog-close class="modern-button">Cerrar</button>
+</mat-dialog-actions>

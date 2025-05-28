@@ -1,0 +1,23 @@
+
+
+.show-item {
+    transition: 0.4s scale, 0.4s box-shadow;
+}
+
+.show-item:hover {
+    scale: 1.04;
+    box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.61);;
+
+}
+
+.cont-intro {}
+
+.cont-text {
+    padding: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .show-item {
+        flex-direction: column;
+    }
+}

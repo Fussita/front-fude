@@ -1,0 +1,54 @@
+
+<div flex-col style="height: 100%;">
+    
+    <div flex-col class="cont-intro bg-blue-100" style="width: 100%; padding: 24px 12%;">
+        <p class="font-20-800" style="color: white;">AÑADIR ALIANZA</p>
+    </div>
+
+    <div flex-col style="height: auto; padding: 4% 18%; gap: 24px;">
+        <form flex-col style="gap: 24px;" [formGroup]="xform"  >
+            
+            <input class="inp-base" formControlName="name" 
+                style="width: 100%; height: 48px;" placeholder="NOMBRE">
+                
+                @if (isVal('name') && gErr('name').hasValue() ) {
+                    <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{gErr('name').getValue()}}</p></div>                   
+                }      
+
+            <input class="inp-base" formControlName="description" 
+                style="width: 100%; height: 48px;" placeholder="DESCRIPCION">
+
+                @if (isVal('description') && gErr('description').hasValue() ) {
+                    <div class="inp-sec-err" style="color: rgb(255, 12, 12);"><p>{{gErr('description').getValue()}}</p></div>                   
+                }      
+    
+            <input 
+                class="font-16-600" (change)="onFileChange($event)"
+                style="color: rgb(98, 98, 98); width: 100%; height: 48px; padding: 24px;" type="date" id="fecha" name="fecha">
+
+            <div style="display: flex; flex-wrap: wrap; gap: 36px; justify-content: center;">
+
+                @for (i of insti; track $index) {
+                    <div class="insti-item"
+                        flex-col (click)="addItem(i)"
+                        [ngClass]="!verify(i.id)?'select-item':'selected-item'" 
+                        >
+                        <img src="{{i.image}}" style="width: 160px; object-fit: cover;">
+                        <p>{{i.name}}</p>
+                    </div>
+                }
+
+            </div>
+
+        </form>
+
+        <button 
+            class="btt-prim"
+            style="width: auto; height: auto; align-self: end;"
+            (click)="add()"
+        >CONFIRMAR</button>
+
+
+    </div>
+
+</div>
