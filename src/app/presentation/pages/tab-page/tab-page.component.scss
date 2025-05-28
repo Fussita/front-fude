@@ -21,6 +21,10 @@
     width: 60%;
 }
 
+.main-cont {
+    display: flex;
+}
+
 @media only screen and (max-width: 768px) {
 
     .tab-face {
@@ -33,6 +37,11 @@
     
     .btt-tab {
         width: 100%;
+    }
+
+    
+    .main-cont {
+        flex-direction: column;
     }
 }
 
