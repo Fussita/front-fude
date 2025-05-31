@@ -48,4 +48,6 @@ el amor en la labor social son fundamentales, especialmente al apoyar a niños, 
 adolescentes y adultos mayores. 
 `
 
-export const presentationText = `Somos una entidad sin fines de lucro dedicada a proteger y promover los derechos de las personas y comunidades en situación de necesidad. Nuestro compromiso es brindar apoyo integral, impulsando su desarrollo, bienestar y calidad de vida mediante programas y acciones. Trabajamos incansablemente para construir un futuro más justo y solidario, donde todos puedan ejercer plenamente sus derechos y vivir con dignidad.`
+export const presentationTextA = `Somos una entidad sin fines de lucro dedicada a proteger y promover los derechos de las personas y comunidades en situación de necesidad. Nuestro compromiso es brindar apoyo integral, impulsando su desarrollo, bienestar y calidad de vida mediante programas y acciones. Trabajamos incansablemente para construir un futuro más justo y solidario, donde todos puedan ejercer plenamente sus derechos y vivir con dignidad.`
+export const presentationTextB = `Somos una entidad sin fines de lucro dedicada a proteger y promover los derechos de las personas y comunidades en situación de necesidad. Nuestro compromiso es brindar apoyo integral, impulsando su desarrollo, bienestar y calidad de vida mediante programas y acciones.`
+

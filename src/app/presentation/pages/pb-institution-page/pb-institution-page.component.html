@@ -1,5 +1,5 @@
 
-<div flex-col style="width: 100%; height: 100%;">
+<div flex-col style="width: 100%; height: 100%; ">
     <header-simple></header-simple>
 
     <div flex-col class="cont-intro bg-blue-100" style="width: 100%; padding: 24px 12%;">
@@ -7,13 +7,12 @@
         <p class="font-16-200 jt-text" style="color: white;">{{textRandom}}</p>
     </div>
 
-    <div flex-col style="padding: 42px 12%; width: 100%; height: auto; align-items: center; gap: 24px;">
+    <div flex-col style="padding: 42px 12%; width: 100%; height: auto; align-items: center; gap: 12px;">
 
         @for ( i of insti; track $index; let even = $even ) {
 
             @if ( !even ) {
-                <div flex class=" show-item bg-blue-100" style="
-                    width: 100%; height: auto; justify-content: center; align-items: center; ">
+                <div flex class=" show-item bg-blue-100" style="width: 100%; height: auto; justify-content: center; align-items: center; padding: 0 24px;">
 
                     <div flex style="
                         padding: 4px; justify-content: center; align-items: center; height: 100%; width: 40%;">
@@ -28,7 +27,7 @@
                     </div>
                 </div>
             } @else {
-                <div flex class="show-item" style="width: 100%; height: auto;justify-content: center; align-items: center;">
+                <div flex class="show-item" style="width: 100%; height: auto;justify-content: center; align-items: center; padding: 0 24px;">
                     <div flex style="
                         padding: 4px; justify-content: center; align-items: center; height: 100%; width: 40%;">
                         <img style="height: 140px; width: auto;" src="{{i.image}}">

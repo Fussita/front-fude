@@ -4,20 +4,9 @@
     transition: 0.4s scale, 0.7s box-shadow;
 }
 
-.add-button:hover {
-    scale: 1.02;
-    box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.61);
-}
 
 .show-item {
-    transition: 0.4s scale, 0.7s box-shadow;
-    
-}
-
-.show-item:hover {
-    scale: 1.02;
-    box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.61);
-
+    transition: 0.4s scale, 0.7s box-shadow;   
 }
 
 .main-cont {
@@ -27,6 +16,9 @@
 @media only screen and (max-width: 768px) {
     .main-cont {
         padding: 8% 8%;
-        gap: 24px;
+        gap: 12px;
+    }
+    .show-item {
+        flex-direction: column;
     }
 }

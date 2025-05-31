@@ -11,22 +11,24 @@
         <div flex
             (click)="goWhere('auth/tab/alliance/add')"
             class="add-button" style="justify-content: center; cursor: pointer; background-color: rgb(189, 189, 253);">
-            <p class="font-24-800 font-blue-100" style="font-size: 80px; line-height: 88px;">+</p>
+            <p class="font-24-800 font-blue-100" style="font-size: 40px; line-height: 88px;">+</p>
         </div>
 
         @for ( i of insti; track $index; ) {
-        <div flex-col class="show-item bg-blue-100" style=" align-items: start; gap: 24px; padding: 4% 4%; height: auto; 
+        <div flex class="show-item bg-blue-100" style=" align-items: start; gap: 24px; padding: 4% 4%; height: auto; 
             color: white; border: 1px solid white;
         "> 
             
             <div flex style="height: auto; width: 100%; justify-content: center;">
-                <img style="height: 140px; width: auto;" src="{{i.institutionImage}}">
+                <img style="width: 300px;" src="{{i.institutionImage}}">
             </div>
 
-            <div flex-col style="gap: 8px;">
-                <p class="font-20-800">{{i.name}}</p>
-                <p class="font-18-400 jt-text">Aliados desde {{i.creationDate}}</p>
-                <p class="font-18-200 jt-text">{{i.description}}</p>
+            <div flex-col style="justify-content: space-between; height: 100%; row-gap:12px">
+                <div flex-col style="row-gap:12px">
+                    <p class="font-20-800">{{i.name}}</p>
+                    <p class="font-16-400 jt-text">Aliados desde {{i.creationDate}}</p>
+                    <p class="font-16-200 jt-text">{{i.description}}</p>
+                </div>
                 <div flex style="gap: 12px;">
                     <button class="btt-prim"
                         (click)="goWhere('auth/tab/alliance/mod/'+i.id)"

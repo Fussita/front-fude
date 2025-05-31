@@ -1,45 +1,23 @@
 
 export const EXALLIANCE = [
     {
+      // Fundacion Vida Plena
       institutionId: 'asdasddasasddsasdadsa',
-      //institutionImage: '../../../../assets/images/polar.png',
-      institutionImage: '../../../../assets/images/gray-min.jpg',
-      name: 'EMPRESA LOREM IPSUM',
-      creationDate: '04/02/2012',
-      id: 'asdasddasasddsasdadsa',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, libero ut feugiat scelerisque, justo mi venenatis augue, ut imperdiet sapien odio eu nunc. Nullam ut ligula vel ex posuere tincidunt. Suspendisse potenti. Etiam tincidunt facilisis nulla at scelerisqu',
-    },
-    {
-      institutionId: 'asdasddasasddsasdadsa',
-      institutionImage: '../../../../assets/images/gray-min.jpg',
-      name: 'EMPRESA LOREM IPSUM',
+      institutionImage: '../../../../assets/data-images/ali-manoscuidan.png',
+      name: 'Alianza Manos que Cuidan',
       creationDate: '16/07/2007',
       id: 'asdasddasasddsasdadsa',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, libero ut feugiat scelerisque, justo mi venenatis augue, ut imperdiet sapien odio eu nunc. Nullam ut ligula vel ex posuere tincidunt. Suspendisse potenti. Etiam tincidunt facilisis nulla at scelerisqu',
+      description: 'Con el propósito de mejorar la calidad de vida de los adultos mayores en situación de vulnerabilidad, FUDEPRONA y la Fundación Vida Plena han establecido la alianza estratégica “Manos que Cuidan”, enfocada en brindar apoyo integral a comunidades de ancianos.'
     },
     {
+      // Fundacion Brillando Juntos
       institutionId: 'asdasddasasddsasdadsa',
-      institutionImage: '../../../../assets/images/gray-min.jpg',
-      name: 'EMPRESA LOREM IPSUM',
+      institutionImage: '../../../../assets/data-images/ali-futuro.png',
+      name: 'Alianza Futuro Brillante',
       creationDate: '16/07/2007',
       id: 'asdasddasasddsasdadsa',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, libero ut feugiat scelerisque, justo mi venenatis augue, ut imperdiet sapien odio eu nunc. Nullam ut ligula vel ex posuere tincidunt. Suspendisse potenti. Etiam tincidunt facilisis nulla at scelerisqu',
-    },
-    {
-      institutionId: 'asdasddasasddsasdadsa',
-      institutionImage: '../../../../assets/images/gray-min.jpg',
-      name: 'EMPRESA LOREM IPSUM',
-      creationDate: '16/07/2007',
-      id: 'asdasddasasddsasdadsa',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, libero ut feugiat scelerisque, justo mi venenatis augue, ut imperdiet sapien odio eu nunc. Nullam ut ligula vel ex posuere tincidunt. Suspendisse potenti. Etiam tincidunt facilisis nulla at scelerisqu',
-    },
-    {
-      institutionId: 'asdasddasasddsasdadsa',
-      institutionImage: '../../../../assets/images/gray-min.jpg',
-      name: 'EMPRESA LOREM IPSUM',
-      creationDate: '16/07/2007',
-      id: 'asdasddasasddsasdadsa',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, libero ut feugiat scelerisque, justo mi venenatis augue, ut imperdiet sapien odio eu nunc. Nullam ut ligula vel ex posuere tincidunt. Suspendisse potenti. Etiam tincidunt facilisis nulla at scelerisqu',
+      description: 'Con el compromiso de fortalecer la educación infantil en comunidades vulnerables, FUDEPRONA y la Fundación Brillando Juntos han establecido una alianza para brindar oportunidades de aprendizaje y desarrollo a niños con dificultades económicas.' 
     },
     
   ]
+

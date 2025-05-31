@@ -1,22 +1,18 @@
 
-<div flex-col 
-
-    style="padding: 48px 8%; gap: 24px;
-        background-color: rgb(97, 123, 221); color: white;"
-    >
+<div flex-col style="padding: 48px 8%; gap: 8px; background-color: #1e2f92; color: white;" >
 
     <p class="font-24-800">ACTIVIDADES DESTACADAS</p>
     
-    <div class="activities-main" flex style="justify-content: center; gap: 1px;">
+    <div class="activities-main" flex style="justify-content: center;">
            
-        <div flex-col style="gap: 8px; padding: 0px;">
+        <div flex-col style="gap: 8px;">
         @for (i of activities; track $index) {
             <div flex class="act-cont" style="
                 background-color: white;
                 color: black;
                 border: 1px solid rgb(180, 180, 180);
                 width: 100%; gap: 24px; align-items: center; cursor: pointer;">
-                <img class="img-act" style="width: 34%; object-fit: cover;" src="{{i.image}}">
+                <img class="img-act" style="width: 380px; object-fit: cover;" src="{{i.image}}">
                 <div flex-col class="txt-limit" style="width: 50%; height: 100%; padding: 8px;">
                     <p class="font-16-400">{{i.fecha}}</p>
                     <p class="font-24-800 jt-text">{{i.titulo}}</p>
@@ -27,14 +23,14 @@
         </div>
     </div>
 
-    <div class="activities-main-phone" flex-col style="justify-content: center; gap: 1px;">
+    <div class="activities-main-phone" flex-col style="justify-content: center;">
         <div flex-col style="gap: 12px; padding: 4px;">
             @for (i of activities; track $index) {
                 <div class="act-phone" flex-col style="
                     background-color: white;
                     color: black;
-                    padding: 24px; border-radius: 6px; gap: 6px; cursor: pointer;">
-                    <img style="border-radius: 6px;  width: 100%; object-fit: cover;" src="{{i.image}}">
+                    padding: 24px; border-radius: 3px; gap: 6px; cursor: pointer;">
+                    <img style="border-radius: 3px;  width: 100%; object-fit: cover;" src="{{i.image}}">
                     <p class="font-16-200">{{i.fecha}}</p>
                     <p class="font-16-800 jt-text">{{i.titulo}}</p>
                 </div>              
@@ -43,4 +39,8 @@
 
     </div>
 
+    <div flex style="justify-content: center; border-radius: 3px; background-color: white;">
+        <p style="color: black; font-size: 16px; font-weight: 600;">1</p>
+    </div>
+    
 </div>
