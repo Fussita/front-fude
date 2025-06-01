@@ -15,4 +15,5 @@ export const EXINSTI = [
       phone: '0212-124-7744',
       email: 'vida-plena@vpfundacion.com',
     },
+    
   ]

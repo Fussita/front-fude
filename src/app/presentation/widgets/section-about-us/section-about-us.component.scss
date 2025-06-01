@@ -10,7 +10,7 @@
 
 .text {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 @media only screen and (max-width: 768px) {
@@ -29,12 +29,9 @@
 
 .us-note {
     transition: 0.4s scale;
-    cursor: pointer;
-    flex: 1 1 300px; /* Elementos flexibles con un ancho mínimo de 150px */
-}
-
-.us-note:hover {
-    scale: 1.04;
+    flex: 1 1 300px; 
+    padding: 42px 0px; 
+    border-radius: 3px;
 }
 
 .img-around {
