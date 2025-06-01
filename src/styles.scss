@@ -3,6 +3,7 @@
 @import 'styles/struct.scss';
 @import 'styles/color.scss';
 @import 'styles/input.scss';
+@import 'material-icons/iconfont/material-icons.css';
 
 * {
     padding: 0px;
@@ -12,6 +13,12 @@
 }
 
 html, body { height: 100%; }
+
+.icon-ff {
+    font-family: 'Material Icons';
+    font-weight: bold;
+    font-display: swap;
+}
 
 .cdk-overlay-pane {
   border-radius: 12px !important; /* Asegura el redondeo */

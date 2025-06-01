@@ -38,10 +38,22 @@
     .btt-tab {
         width: 100%;
     }
-
     
     .main-cont {
         flex-direction: column;
     }
 }
 
+.button-tab {
+    border-radius: 6px;
+    padding: 4px;
+    height: 50px;
+    width: 80px;
+    cursor: pointer;
+    transition: 0.4s color, 0.4s background-color;
+}
+
+.button-tab:hover {
+    background-color: rgb(35, 32, 32);
+    color: white;
+}
