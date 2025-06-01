@@ -30,7 +30,7 @@ export class PbInstitutionPageComponent implements OnInit {
 
   insti: Institution[] = []
 
-  textRandom = `Colaboramos activamente con diversas instituciones que comparten nuestra visión de construir un mundo más equitativo y solidario. Estas organizaciones, comprometidas con el bienestar social, participan aportando recursos, conocimientos y voluntariado. Juntos trabajamos para impactar positivamente a comunidades en situación de vulnerabilidad. Valoramos profundamente estas alianzas, ya que son clave para alcanzar nuestros objetivos y multiplicar el alcance de nuestras acciones.`
+  textRandom = `Colaboramos activamente con diversas instituciones que comparten nuestra visión de construir un mundo más equitativo y solidario. Estas organizaciones, comprometidas con el bienestar social, participan aportando recursos, conocimientos y voluntariado.`
  
   findInsti = new FindManyInstitution()
     
