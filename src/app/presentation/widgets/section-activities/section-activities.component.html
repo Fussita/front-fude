@@ -1,55 +1,36 @@
 
-<div flex-col style="padding: 48px 8%; gap: 8px; background-color: #1e2f92; color: white;" >
+<div flex-col style="padding: 48px 8%; gap: 24px;" >
 
-    <p class="font-24-800">ACTIVIDADES DESTACADAS</p>
+    <p class="font-20-800">ACTIVIDADES DESTACADAS</p>
     
     <div class="activities-main">
            
-        <div flex style="gap: 2px; flex-wrap: wrap; justify-content: center;">
-        @for (i of activities; track $index) {
-            <div flex class="act-cont" style="position: relative; align-items: center; cursor: pointer;">
-                
-                <div style="position: relative;">
-                    <img class="img-act" style="z-index: 10; width: 300px; height: 300px; object-fit: cover;" src="{{i.image}}">
-                    <div  
-                        class="filter"    
-                    style=" width: 300px; height: 100%; z-index: 50; top: 0; position: absolute;">
-                    </div>
+        <div class="acti-cont" flex style="flex-wrap: wrap; justify-content: center;">
+        @for (i of activities; track $index) {        
+            <div flex-col class="act-cont" style="
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 3px; 
+                cursor: pointer;">
+                <div flex-col class="txt-limit" style="
+                    max-width: 300px;
+                padding: 18px 28px; justify-content: space-between; height: 100%; row-gap: 8px;">
+                    <p class="font-14-800 jt-text">{{i.titulo}}</p>
+                    <p class="font-14-600" 
+                        style=" text-align: end; background-color: #1e2f92; color: white; padding: 1px 6px; border-radius: 3px;"
+                    >{{i.fecha}}</p>
                 </div>
-
-                <div flex-col class="txt-limit" style="position: absolute; bottom: 0; padding: 8px; z-index: 100;">
-                    <p class="font-14-400">{{i.fecha}}</p>
-                    <p class="font-14-600 jt-text">{{i.titulo}}</p>
+                <div>
+                <img class="img-act" style="
+                    border-bottom-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    width: 300px; height: 260px; object-fit: cover;" src="{{i.image}}">
                 </div>
-
             </div>            
+            
         }
         </div>
 
     </div>
-
-    <div class="activities-main-phone" flex-col style="justify-content: center;">
-        <div flex-col style="gap: 2px; padding: 4px;">
-            @for (i of activities; track $index) {
-                <div class="act-phone" flex-col style="
-                    position: relative; border-radius: 3px; gap: 6px; cursor: pointer;">
-                    
-                    <div style="position: relative;">
-                        <img style="border-radius: 3px;  z-index: 10; width: 100%; object-fit: cover;" src="{{i.image}}">
-                        <div style="z-index: 50; top: 0; position: absolute; 
-                        background-color: rgba(57, 56, 56, 0.275); height: 100%; width: 100%;"></div>
-                    </div>
-
-                    <div flex-col style="position: absolute; bottom: 0; z-index: 100; padding: 8px;">
-                        <p class="font-14-400">{{i.fecha}}</p>
-                        <p class="font-14-800 jt-text">{{i.titulo}}</p>
-                    </div>
-                
-                </div>              
-            }
-            </div>
-
-    </div>
-
     
 </div>

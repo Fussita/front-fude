@@ -1,31 +1,39 @@
 
-<div flex-col class="section-us" style="gap: 20px;">
+<div flex-col class="section-us" style="gap: 20px; justify-content: center; background-color: rgb(255, 255, 255);">
 
-    <div flex-col style="gap: 4px;">
+    <div flex style="
+        gap: 24px; 
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        border-radius: 3px;
+        background-color: #5c77ff;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 24px;
+    ">
+        <img 
+            class="img-about"
+            style="height: 400px; border-radius: 3px;"
+            src="../../../../assets/images/veg.jpg">
         
-        <p class="font-24-800" >SOBRE NOSOTROS</p>
-        <p class="font-16-400 jt-text">
-            {{presentationText}}
-        </p>
-    </div>
-
-    <div class="img-cont" flex style="justify-content: space-around; gap: 6px;">
-
-        <div flex-col class="us-note" style="gap: 24px; align-items: center; ">
-            <img class="img-around" src="../../../../assets/images/diversidad.png">
-            <p class="text jt-text" style="width: 280px">{{textVA}}</p>
+        <div flex-col style="
+            width: 500px; 
+            row-gap: 20px;
+            padding: 48px;
+        ">
+            <div flex-col style="row-gap: 12px; ">
+                <p class="font-24-800"> ¿QUÉ ES FUDEPRONA? </p>    
+                <p class="font-18-200 jt-text " style="
+                    line-height: 26px;
+                
+                    width: auto;"> {{presentationText}} </p>
+            </div>
+            <div flex style="gap: 12px;">
+                <button class="hero-btt btt-cl-blue" style="width: 100%;">VER ACTIVIDADES</button>
+            </div>
         </div>
-        
-        <div flex-col class="us-note" style="gap: 24px; align-items: center;">
-            <img class="img-around" src="../../../../assets/images/amor.png">
-            <p class="text jt-text" style="width: 280px">{{textVB}}</p>
-        </div>
-        
-        <div flex-col class="us-note" style="gap: 24px; align-items: center;">
-            <img class="img-around" src="../../../../assets/images/planta.png">
-            <p class="text jt-text" style="width: 280px">{{textVC}}</p>
-        </div>
-
+            
     </div>
 
 </div>

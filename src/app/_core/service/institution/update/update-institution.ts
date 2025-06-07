@@ -14,7 +14,7 @@ export class UpdateInstitution {
     execute( entry: UpdateInstitutionEntry ): Observable<Result<UpdateInstitutionResponse>>  {
         // const headers = HeaderBearerGen(token)
         const formData = new FormData()
-        if (entry.name) formData.append('id', entry.id)
+        formData.append('id', entry.id)
         if (entry.name) formData.append('name', entry.name)
         if (entry.phone) formData.append('phone', entry.phone)
         if (entry.email) formData.append('email', entry.email)
