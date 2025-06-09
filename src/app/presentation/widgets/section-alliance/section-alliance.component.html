@@ -4,11 +4,12 @@
     gap: 24px;
     height: auto;
     width: 100%;
-    background-color: white;">
+    align-items: center;
+    ">
 
-    <p class="font-20-800">INSTITUCIONES CON LAS QUE HEMOS TRABAJADO</p>
+    <p class="font-20-800" style="font-size: 28px;">INSTITUCIONES CON LAS QUE HEMOS TRABAJADO</p>
 
-    <div flex style="gap: 24px; flex-wrap: wrap; padding: 24px;">
+    <div flex style="gap: 24px; flex-wrap: wrap; padding: 24px; width: 100%;">
         @for ( i of insti; track $index ) {
             <div>
                 <img style="width: 140px;" src="{{i.image}}">

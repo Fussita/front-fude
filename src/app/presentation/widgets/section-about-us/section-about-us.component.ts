@@ -4,7 +4,8 @@ import { presentationTextB } from '../../../_core/constants/presentation-text';
 @Component({
   selector: 'section-about-us',
   standalone: true,
-  imports: [],
+  imports: [
+  ],
   templateUrl: './section-about-us.component.html',
   styleUrl: './section-about-us.component.scss'
 })

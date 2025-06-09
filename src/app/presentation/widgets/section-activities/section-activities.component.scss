@@ -37,6 +37,16 @@
     background-color: rgba(48, 17, 17, 0.141);
 }
 
+.title {
+    font-size: 32px; font-weight: 800;
+}
+
+.main-cont {
+    background-image: url('../../../../assets/images/fond180.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media only screen and (max-width: 960px) {
     .act-cont {
         max-width: none;
@@ -45,4 +55,9 @@
     .acti-cont {
         row-gap: 24px;
     }
+
+    .title {
+        font-size: 24px;
+    }
+
 }

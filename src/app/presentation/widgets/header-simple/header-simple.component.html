@@ -1,31 +1,23 @@
-<div flex-col class="header bg-blue-100">
-    <div flex-col style="gap: 8px;">
-        <div flex style="padding: 0 24px; justify-content: end; gap: 16px;">
-            <img src="../../../../assets/images/ig.png"
-                style="width: 12px; height: 12px; cursor: pointer;"
-            >
-            <img src="../../../../assets/images/face.png"
-                style="width: 6px; height: 12px; cursor: pointer;"
-            >
-            <img src="../../../../assets/images/user.png"
-                (click)="goWhere('auth/login')"
-                style="width: 12px; height: 12px; cursor: pointer;"
-            > 
-        </div>
+
+<div flex-col class="header" style="background-color: #1446A0;">
+    <div flex style="gap: 8px;">
         <div flex class="nav-bar">
-            <p class="nav-title font-28-800"
-                (click)="goWhere('home')"
-            >FUDEPRONA</p>
+            
+            <p class="nav-title font-28-800" (click)="goWhere('home')" >FUDEPRONA</p>
+            
             <div flex class="nav-item" style="align-items: center;">
-                <p class="nav-subtitle font-18-600" (click)="goWhere('home')" >NOSOTROS</p>
-                <p class="nav-subtitle font-18-600">ACTIVIDADES</p>
-                <p class="nav-subtitle font-18-600"
-                    (click)="goWhere('institution')"
-                >INSTITUCIONES</p>
-                <p class="nav-subtitle font-18-600"
-                    (click)="goWhere('subsidiary')"
-                >SUCURSALES</p>
+                <p class="nav-subtitle font-16-600" (click)="goWhere('home')" >Nosotros</p>
+                <p class="nav-subtitle font-16-600">Actividades</p>
+                <p class="nav-subtitle font-16-600" (click)="goWhere('institution')"
+                >Institución</p>
+                <p class="nav-subtitle font-16-600" (click)="goWhere('subsidiary')"
+                >Sucursales</p>
             </div>
+
+            <div flex>
+                <button class="btt-header" (click)="goWhere('auth/login')" >Ingresar</button>
+            </div>
+
         </div>
     </div>
 </div>
