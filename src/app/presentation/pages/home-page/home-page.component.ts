@@ -6,6 +6,7 @@ import { SectionAllianceComponent } from '../../widgets/section-alliance/section
 import { SectionVisionComponent } from '../../widgets/section-vision/section-vision.component';
 import { HeaderSimpleComponent } from "../../widgets/header-simple/header-simple.component";
 import { BannerComponent } from '../../widgets/banner-main/banner-main.component';
+import { SectionActivityComponent } from '../../widgets/section-activity/section-activity.component';
 
 @Component({
   selector: 'app-home-page',
@@ -18,7 +19,7 @@ import { BannerComponent } from '../../widgets/banner-main/banner-main.component
     SectionActivitiesComponent,
     SectionAllianceComponent,
     SectionVisionComponent,
-    HeaderSimpleComponent
+    SectionActivityComponent
 ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'

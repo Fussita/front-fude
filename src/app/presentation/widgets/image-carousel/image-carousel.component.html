@@ -1,0 +1,14 @@
+
+<div class="carousel" style="height: 100%; background-color: rgb(13, 13, 13);">
+  <div class="slides" [style.transform]="'translateX(-' + ind() * 100 + '%)'">
+    <div class="slide" *ngFor="let img of data" >
+      <img [src]="img.image" class="img-cont" />
+      <div style="padding: 20px; background: none; color: white; height: 100%;">
+        <p class="font-16-800">{{img.fecha}}</p>
+        <p class="font-24-800">{{img.titulo}}</p>
+      </div>
+    </div>
+  </div>
+  <button class="nav prev" (click)="prev()">‹</button>
+  <button class="nav next" (click)="next()">›</button>
+</div>

@@ -102,3 +102,40 @@
     transition: background-color 0.4s ease;
     box-shadow: 0px 4px 12px rgba(63, 63, 63, 0.61);
 }
+
+
+.title-mobile {
+    display: none;
+    bottom: 0%; position: absolute; width: 80%; padding: 60px 40px; row-gap: 18px;
+}
+
+.title-mobile > p {
+    font-size: 18px;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .tab-menu {
+        display: flex;
+    }
+    .title {
+        display: none;
+    }
+    .title-mobile {
+        display: flex;
+    }
+    .nav-bar {
+        display: none;
+    }
+    .btt-int {
+        padding: 8px;
+    }
+    .head {
+        padding: 12px;
+    }
+
+}

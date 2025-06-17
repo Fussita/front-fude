@@ -1,18 +1,43 @@
 @import '../../../../styles.scss';
 
-
-@media only screen and (max-width: 1000px) {
-    .web-sect {
-        display: none;
-    }
+.web-sect {
+    width: 120px; 
 }
 
-@media only screen and (max-width: 768px) {
+.logo {
+    align-items: start; 
+}
+
+.contact {
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
     .contac {
         font-size: 16px;
         text-align: center;
     }
     .adj {
         gap: 6px;
+    }
+    .cont-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact {
+        justify-content: start;
+    }
+    .cont-text {
+        width: 100%;
+    }
+
+    .web-sect {
+        border: 0px;
+        border-top: 1px solid white;
+        width: 100%;
+        padding: 20px;
+    }
+    .logo {
+        align-items: center; 
     }
 }

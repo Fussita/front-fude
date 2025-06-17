@@ -1,36 +1,38 @@
 
-<div flex style="background-color: #1e2f92; color: white; padding: 48px 8%; gap: 4vw; justify-content: space-between;">
+<div flex 
+    class="cont-main"
+    style="background-color: #131313; color: white; padding: 48px 8%; gap: 4vw; justify-items: space-between;">
 
-    <div flex-col style="width: 400px; align-items: start; gap: 20px;">
-        <div>    
-            <p class="font-16-600" style="color: white;">NOSOTROS</p>
-            <p class="font-16-400 jt-text" style="font-size: 14px; color: #a8b2e8">Somos una entidad sin fines de lucro dedicada a proteger y promover los derechos de las personas y comunidades en situación de necesidad</p>
-        </div>
+    <div flex-col class="cont-text" style="align-items: start; gap: 20px;">
 
-        <div flex-col style="align-items: center;">
+        <div flex-col class="logo" style="width: 100%;">
             <img height="90px" src="../../../../assets/images/logo-png.png">
             <p class="font-24-800">FUDEPRONA</p>
         </div>
+
+        <div flex-col style="align-items: center;">    
+            <p class="font-16-400 jt-text" style="font-size: 14px; color: #7b7b7b">Somos una entidad sin fines de lucro dedicada a proteger y promover los derechos de las personas y comunidades en situación de necesidad</p>
+        </div>
+
     </div>
 
-    <div class="web-sect" flex-col style="width: 120px; align-items: start; gap: 16px;">
-        <p class="font-16-600 jt-text" style="color: #a8b2e8">WEB</p>    
-        <p class="font-16-600" style="cursor: pointer;" (click)="goWhere('home')" >NOSOTROS</p>
-        <p class="font-16-600" style="cursor: pointer;">ACTIVIDADES</p>
-        <p class="font-16-600" style="cursor: pointer;" (click)="goWhere('institution')" >INSTITUCIONES</p>
-        <p class="font-16-600" style="cursor: pointer;" (click)="goWhere('subsidiary')">SUCURSALES</p>
-    
+    <div class="web-sect" flex-col style="align-items: start; gap: 16px; justify-content: center;">
+        <p class="font-14-400 jt-text" style="color: #7b7b7b">WEB</p>    
+        <p class="font-14-400" style="cursor: pointer;" (click)="goWhere('home')" >NOSOTROS</p>
+        <p class="font-14-400" style="cursor: pointer;">ACTIVIDADES</p>
+        <p class="font-14-400" style="cursor: pointer;" (click)="goWhere('institution')" >INSTITUCIONES</p>
+        <p class="font-14-400" style="cursor: pointer;" (click)="goWhere('subsidiary')">SUCURSALES</p>
     </div>
 
-    <div flex style="justify-content: space-between; align-items: start;">
+    <div class="contact" flex style="align-items: start; width: 100%; ">
         <div flex-col style="gap: 18px;">
             <p 
                 class="contac font-20-800" 
                 style="border: 2px solid white; padding: 16px; border-radius: 6px;">CONTACTÁNOS</p>
             
-            <div flex-col>
-                <p class="font-16-400" style="font-size: 14px;">infoafudepronaafude.org</p>
-                <p class="font-16-400" style="font-size: 14px;">58 412 321 4122</p>
+            <div flex-col style="row-gap: 6px;">
+                <p class="font-14-400" style="font-size: 14px;">infoafudepronaafude.org</p>
+                <p class="font-14-400" style="font-size: 14px;">58 412 321 4122</p>
             </div>
             <div flex style="gap: 12px;">
                 <img src="../../../../assets/images/ig.png"

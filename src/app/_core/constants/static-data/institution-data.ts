@@ -15,5 +15,12 @@ export const EXINSTI = [
       phone: '0212-124-7744',
       email: 'vida-plena@vpfundacion.com',
     },
-    
-  ]
+    {
+      id: '1241211422',
+      image: '../../../../assets/data-images/fund-vidaplena.png',
+      name: 'Fundacion Vida Plena',
+      description: 'La Fundación Vida Plena nace con el propósito de mejorar la calidad de vida de los adultos mayores y personas en situación de vulnerabilidad. Con un enfoque centrado en el bienestar, la inclusión y la dignidad humana, nuestra organización trabaja incansablemente para garantizar que quienes más lo necesitan reciban apoyo integral.',
+      phone: '0212-124-7744',
+      email: 'vida-plena@vpfundacion.com',
+    },
+]
