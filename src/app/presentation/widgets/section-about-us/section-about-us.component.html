@@ -1,33 +1,41 @@
 
-<div flex-col class="section-us" style="gap: 12px; align-items: center; ">
-
-    <p class="font-24-800" style="font-size: 36px; margin-top: 40px;"> ¿Qué es Fudeprona? </p>  
+<div flex-col class="section-us" style="gap: 12px; align-items: center;">
 
     <div flex style="
         margin-top: 16px;
         gap: 24px; 
         align-items: center;
-        justify-content: center;
         height: 100%;
+        width: 100%;
         border-radius: 3px;
         color: black;
         padding: 24px;
+        z-index: 100;
+        justify-content: end;
     ">
-        <img 
-            class="img-about"
-            style="height: 40vh; border-radius: 3px;"
-            src="../../../../assets/images/veg.jpg">
         
-        <div flex-col class="cont-text" >
-            <div flex-col style="row-gap: 12px; ">  
-                <p class="font-16-400 jt-text" style="line-height: 26px; width: auto;"> {{presentationText}} </p>
-            </div>
-            <div flex style="gap: 12px;">
-                <button class="hero-btt btt-cl-white" style="width: 100%;">VER ACTIVIDADES</button>
-            </div>
-        </div>
+        <div flex-col class="cont-text" style="color: white;" >
             
-    </div>
+            <p class="font-20-800" style="
+                font-size: 54px; margin-top: 40px;
+                line-height: 60px;
+                border-bottom: 1px solid white;
+                padding-bottom: 12px;
+                "> ¿Qué es Fudeprona? </p>  
 
+            <div flex-col style="row-gap: 12px; ">  
+                <p class="font-16-200" style="line-height: 26px; width: auto;"> {{presentationText}} </p>
+            </div>
+        
+            <div flex style="gap: 12px;">
+                <button class="hero-btt" style="width: 60%;">VER ACTIVIDADES</button>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+    <div class="overlay"></div>
 
 </div>

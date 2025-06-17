@@ -2,51 +2,30 @@
 @import '../../../../styles.scss';
 
 .section-us {
-    padding: 60px 8% 60px 8%;
-    gap: 24px;
     width: 100%;
+    padding: 60px 0;
 }
 
 .text {
     font-size: 16px;
-    font-weight: 400;
-}
-
-@media only screen and (max-width: 1000px) {
-    .img-about {
-        display: none;
-    }
-    .text {
-        font-size: 16px;
-    }
-    .img-cont {
-        flex-direction: column;
-        gap: 24px;
-        div {
-            width: 100%;
-        }
-    }
-    
+    font-weight: 200;
 }
 
 .us-note {
+    min-height: 300px; 
     transition: 0.4s scale;
-    padding: 24px 12px; 
-    border-radius: 3px;
-    max-height: 300px;
-    min-height: 300px;
+    padding: 24px 12px;
     justify-content: center;
     color: black;
-    max-width: 420px;
     min-width: 420px;
-    gap: 24px; 
+    gap: 60px; 
     align-items: center;
+    width: 100%;
 }
 
 .img-around {
-    border: 1px solid rgb(138, 138, 138);
     border-radius: 100%; 
     object-fit: cover;
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
 }

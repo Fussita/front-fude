@@ -3,7 +3,7 @@
 
 .header {
     width: 100%;
-    height: 580px;
+    height: 100vh;
     padding: 24px 8%;
     justify-content: space-between;
     position: relative;
@@ -27,38 +27,78 @@
     bottom: 0;
 }
 
-.header-footer {
-    width: 50%;
-    gap: 12px;
-    position: relative;
-    
-    .hf-text {
-        color: white;
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 42px; 
-    }
-}
-
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(82, 82, 82, 0.392); 
-    pointer-events: none;
+    background-color: rgba(53, 53, 53, 0.462); 
 }
 
-@media only screen and (max-width: 900px) {
-    .header-footer {
-        width: 100%;
-    }
+.head {
+    color: white; 
+    justify-content: space-between; 
+    padding: 20px 38px;    
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 400;
 }
 
+.btt-int {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background: none;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s background-color, 0.4s color ;
+}
 
-.btt-banner {
-    width: 50%;
+.btt-int:hover {
     background-color: white;
-    border: 0px;
+    color: rgb(0, 0, 0);
+}
+
+.btt-int-b {
+    width: 80%; 
+    font-size: 16px; 
+    font-weight: 400;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.4s background-color, 0.4s color ;
+}
+
+.btt-int-b:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.nav-it {
+    cursor: pointer;
+    transition: 0.4s background-color;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.nav-it:hover {
+    background-color: rgb(34, 34, 41);
+}
+
+.fond-off {
+    background-color: transparent;
+    transition: background-color 0.4s ease;
+}
+
+.fond-on {
+    background-color: #00000089;
+    transition: background-color 0.4s ease;
+    box-shadow: 0px 4px 12px rgba(63, 63, 63, 0.61);
 }
