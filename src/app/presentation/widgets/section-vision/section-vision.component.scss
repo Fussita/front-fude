@@ -3,7 +3,7 @@
 
 .section-us {
     width: 100%;
-    padding: 60px 0;
+    padding: 140px 0 60px 0;
 }
 
 .text {
@@ -34,5 +34,12 @@
 @media only screen and (max-width: 1000px) {
     .img-cont {
         flex-wrap: wrap;
-    }       
+    }
+    .us-note {
+        width: 100%;
+        min-width: 300px;
+    }
+    .tit {
+        font-size: 22px;
+    }
 }
