@@ -1,6 +1,39 @@
 
 <div flex-col style="height: 100%; width: 100%;">
-    <div flex style="
+
+    <div class="nav-desktop" flex-col>
+        <div 
+            class="button-tab"
+            (click)="goWhere('auth/tab/institution')"
+            flex-col style="justify-content: center; align-items: center;">    
+            <p class="icon-ff" style="font-size: 24px;">diversity_3</p>
+            <p style="font-size: 10px; font-weight: 800;">INSTITUCION</p>
+        </div>
+        <div 
+            class="button-tab"
+            (click)="goWhere('auth/tab/alliance')"
+            flex-col style="justify-content: center; align-items: center;">    
+            <p class="icon-ff" style="font-size: 24px;">handshake</p>
+            <p style="font-size: 10px; font-weight: 800;">ALIADO</p>
+        </div>
+        <div 
+            class="button-tab"
+            (click)="goWhere('auth/tab/sucursal')"
+            flex-col style="justify-content: center; align-items: center;">    
+            <p class="icon-ff" style="font-size: 24px;">place</p>
+            <p style="font-size: 10px; font-weight: 800;">SUCURSAL</p>
+        </div>
+        
+        <div 
+            class="button-tab"
+            (click)="goWhere('')"
+            flex-col style="justify-content: center; align-items: center;">    
+            <p class="icon-ff" style="font-size: 24px;">logout</p>
+            <p style="font-size: 10px; font-weight: 800;">SALIR</p>
+        </div>
+    </div>
+
+    <div class="nav-mobile" flex style="
         bottom: 0;
         align-self: center;
         position: fixed; 
@@ -17,7 +50,7 @@
     ">
         <div 
             class="button-tab"
-            (click)="goWhere('home')"
+            (click)="goWhere('')"
             flex-col style="justify-content: center; align-items: center;">    
             <p class="icon-ff" style="font-size: 24px;">logout</p>
             <p style="font-size: 10px; font-weight: 800;">SALIR</p>
@@ -43,7 +76,6 @@
             <p class="icon-ff" style="font-size: 24px;">place</p>
             <p style="font-size: 10px; font-weight: 800;">SUCURSAL</p>
         </div>
-
     </div>
 
     <router-outlet></router-outlet>

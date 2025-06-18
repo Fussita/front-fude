@@ -1,24 +1,18 @@
 
-.btt-tab {
-    cursor: pointer;
-    font-weight: 800;
-    border: 0px;
-    padding: 12px;
-    transition: background-color 0.4s, scale 0.4s;
-    border-radius: 6px;
-}
-
-.btt-tab:hover {
-    scale: 1.04;
-    background-color: #11207a;
-}
-
-.tab-buttons {
-    width: 20%;
-}
-
-.btt-tab {
-    width: 60%;
+.nav-desktop {
+        bottom: 0;
+        left: 0;
+        align-self: center;
+        position: fixed; 
+        width: auto;
+        padding: 8px;
+        height: 100%;
+        background-color: #11207a;
+        color: white;
+        justify-content: center;
+        max-width: 600px;
+        gap: 24px;    
+        box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.61);
 }
 
 .main-cont {
@@ -55,6 +49,19 @@
 }
 
 .button-tab:hover {
-    background-color: rgb(35, 32, 32);
-    color: white;
+    background-color: rgb(143, 183, 243);
+}
+
+
+.nav-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-mobile {
+        display: flex;
+    }
+    .nav-desktop {
+        display: none;
+    }
 }
