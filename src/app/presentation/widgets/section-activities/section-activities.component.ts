@@ -20,8 +20,8 @@ export class SectionActivitiesComponent {
   formatText() {
     for (let i of this.activities) {
       const words = i.descripcion.trim().split(/\s+/)
-      if (words.length >= 65)
-        i.descripcion = words.slice(0, 80).join(" ") + "..."
+      if (words.length >= 15)
+        i.descripcion = words.slice(0, 15).join(" ") + "..."
     }
   }
 

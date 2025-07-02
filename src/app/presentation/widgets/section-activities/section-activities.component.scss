@@ -33,12 +33,29 @@
     transition: 0.4s background-color;
 }
 
+.goToMore {
+    cursor: pointer;
+    padding: 8px 8px;
+    color: rgb(13, 13, 157);
+    border: 1px solid rgb(13, 13, 157);
+    border-radius: 3px;
+    font-size: 16;
+    font-weight: 400;
+    transition: color 0.4s, background-color 0.4s;
+}
+
+.goToMore:hover {
+    background-color: rgb(13, 13, 157);
+    color: white;
+}
+
 .filter:hover {
     background-color: rgba(48, 17, 17, 0.141);
 }
 
 .title {
-    font-size: 32px; font-weight: 800;
+    font-size: 24px; 
+    font-weight: 800;
 }
 
 .main-cont {
@@ -55,8 +72,8 @@
         row-gap: 24px;
     }
 
-    .title {
-        font-size: 24px;
+    .headed {
+        flex-direction: column;
+        row-gap: 12px;
     }
-
 }
